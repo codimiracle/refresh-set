@@ -131,3 +131,4 @@ dist
 
 # release files
 .dist
+yarn.lock
