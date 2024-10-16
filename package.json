@@ -4,7 +4,6 @@
   "description": "a refresh set after repeat add into set",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
-
   "scripts": {
     "build": "tsc",
     "test": "jest"
@@ -24,7 +23,8 @@
     "@types/jest": "^29.5.13",
     "jest": "^29.7.0",
     "ts-jest": "^29.2.5",
-    "typescript": "^5.6.3"
+    "typescript": "^5.6.3",
+    "ts-node": "^10.9.2"
   },
   "author": "codimiracle",
   "license": "MIT"

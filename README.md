@@ -1,6 +1,9 @@
 # RefreshSet
 a structure for set that refresh element if same id of element is exists
 
+[![RefreshSet CI](https://github.com/codimiracle/refresh-set/actions/workflows/refresh-set-ci.yml/badge.svg)](https://github.com/codimiracle/refresh-set/actions/workflows/refresh-set-ci.yml)
+[![RefreshSet Package](https://github.com/codimiracle/refresh-set/actions/workflows/refresh-set-publish.yml/badge.svg)](https://github.com/codimiracle/refresh-set/actions/workflows/refresh-set-publish.yml)
+
 ## Install
 ```bash
 npm install refresh-set
