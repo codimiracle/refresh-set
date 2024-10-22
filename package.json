@@ -1,9 +1,12 @@
 {
   "name": "refresh-set",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "a refresh set after repeat add into set",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "tsc",
     "test": "jest"
