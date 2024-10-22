@@ -24,7 +24,7 @@ set.add({ id: '1', value: 1 });
 set.add({ id: '2', value: 2 });
 set.add({ id: '1', value: 3 });
 
-console.log(set.toArray()); // [{ id: '1', value: 3 }, { id: '2', value: 2 }
+console.log(set.toArray()); // [{ id: '1', value: 3 }, { id: '2', value: 2 }]
 ```
 
 2. change identifier of element
@@ -45,7 +45,7 @@ set.add({ key: '1', value: 1 });
 set.add({ key: '2', value: 2 });
 set.add({ key: '1', value: 3 });
 
-console.log(set.toArray()); // [{ key: '1', value: 3 }, { key: '2', value: 2 }
+console.log(set.toArray()); // [{ key: '1', value: 3 }, { key: '2', value: 2 }]
 ```
 
 3. custom refresh method
@@ -60,7 +60,8 @@ type Element = {
 const set = new RefreshSet<Element>({
   policy: RefreshPolicy.MERGER,
   merger: (oldElement, newElement) => {
-    newElement.value = oldElement.value + 1;
+    newElement.value = oldElement.value + newElement.value;
+    return newElement;
   },
 });
 
@@ -68,7 +69,7 @@ set.add({ id: '1', value: 1 });
 set.add({ id: '2', value: 2 });
 set.add({ id: '1', value: 3 });
 
-console.log(set.toArray()); // [{ id: '1', value: 4 }, { id: '2', value: 2 }
+console.log(set.toArray()); // [{ id: '1', value: 4 }, { id: '2', value: 2 }]
 ```
 
 ## contributing
